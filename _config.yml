@@ -71,3 +71,7 @@ deploy:
   type: git
   repository: https://github.com/mashangzhao/mashangzhao.github.io.git
 
+
+plugins:
+  - hexo-generator-feed
+  - hexo-generator-sitemap
