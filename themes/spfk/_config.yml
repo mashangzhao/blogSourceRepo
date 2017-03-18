@@ -4,19 +4,19 @@
 ## About Page: `hexo new page about`
 ## Tags Cloud Page: `hexo new page tags`
 menu:
-  博客首页: /
-  作品展示: /works
-  留言打卡: /about
+  首页: /
+  作品: /works
+  留言: /about
 # 前端导航: /FrontEndGuide
 # 静心阅读: /tags
 # 光影之路: /instagram
 # 随笔: /tags/随笔
 
 # Link to your avatar | 填写头像地址
-avatar: img/head.jpg
+avatar: img/myhead.jpg
 
 # Small icon of Your site | 站点小图标地址
-favicon: img/favicon.png
+favicon: img/myfavicon.png
 
 # Social info. Bar | 社交信息展示
 ## Keep "mailto:" in Email | 设置 Email 时保留 "mailto:"
@@ -103,7 +103,7 @@ toc_nowrap: false
 
 # 自定义"阅读全文"链接按钮的显示文字
 # Customize the text on excerpt link
-excerpt_link: 大航海 #修改more>>的文字
+excerpt_link: 故乡的山 #修改more>>的文字
 
 # 是否显示边栏中的搜索框（仅样式，未添加搜索功能）
 # Search Box in left column
@@ -123,7 +123,8 @@ tagcloud: true
 # Blogroll, Link exchange | 友情链接
 # friends: false
 friends:
-  name: http://luuman.github.io/
+  丁基: https://github.com/Oozwding
+  清欢blog: https://github.com/zhixuanli
 
 # 打赏
 # 请在需要打赏的文章的md文件头部，设置属性reward: true
@@ -134,12 +135,12 @@ reward_type: 0
 reward_wording1: '纯属好玩'
 reward_wording2: '扫码打赏，你说多少就多少'
 # 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/img/alipay.jpg
-alipay: /img/alipay.png
+#alipay: /img/alipay.png
 # 微信二维码图片地址
-weixin: /img/weixin.png
+#weixin: /img/weixin.png
 
 #是否开启“关于我”。
-aboutme: 折腾
+aboutme: 折腾，好奇，思念故乡~~~
 #aboutme: false
 
 # 是否在新窗口打开链接
@@ -178,7 +179,7 @@ baidu_analytics:
 # http://ibruce.info/2015/04/04/busuanzi/
 visit_counter:
   on: true
-  site_visit: 海贼到访数
+  site_visit: 悟空到访数
   page_visit: 本页阅读量
 
 # A标签提示
