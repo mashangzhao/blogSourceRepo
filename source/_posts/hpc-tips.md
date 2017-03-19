@@ -3,7 +3,7 @@ title: hpc-tips
 date: 2017-03-19 22:53:17
 tags: [script]
 ---
-# hpc 中用到的几个脚本
+
 最近遇到了这么一件事···
 ## 想要复制N份qbs脚本
 
@@ -43,17 +43,17 @@ tags: [script]
 - 待复制的里面有 `$`符号，一定注意，要将 `\` 加在其前。具体参见shell编程  `=_=`
 	
 ## 执行N份qbs脚本
+
 - 脚本名称为`script.1.pbs`等等
 
 		for i in {1..10}; do qsub script.$i.pbs ;done
 
-
 *图片仅供参考，具体以实物为准*
 
 
-![图片一](https://github.com/mashangzhao/blogSourceRepo/tree/master/source/_posts/hpc_0.PNG)
+![图片一](http://on2k2dqee.bkt.clouddn.com/hpc_0.PNG)
 
-![图片二](https://github.com/mashangzhao/blogSourceRepo/tree/master/source/_posts/hpc_1.PNG)
+![图片二](http://on2k2dqee.bkt.clouddn.com/hpc_1.PNG)
 
 **参考文档1** [Tutorial - Submitting a job using qsub](https://wikis.nyu.edu/display/NYUHPC/Tutorial+-+Submitting+a+job+using+qsub)
 
