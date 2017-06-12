@@ -21,6 +21,8 @@ psql -U postgres -h 127.0.0.1 -p 5432 [-d databasename -W] -- 可以在此指定
 
 > 注意：如果上面指定了-W参数，会强制在连接每一个database时，输入密码，可以先不用
 
+<!-- more -->
+
 **操作如下**
 
 ```SQL

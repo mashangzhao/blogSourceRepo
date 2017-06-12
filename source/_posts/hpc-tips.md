@@ -29,6 +29,7 @@ tags: [script]
 
 
 被复制的内容是
+<!-- more -->
 
 		#!/bin/bash
 	    #PBS -N test
