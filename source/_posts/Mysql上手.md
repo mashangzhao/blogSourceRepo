@@ -212,4 +212,38 @@ Records: 0  Duplicates: 0  Warnings: 0
 > exit
 > quit  #两个命令都可以
 ----------------
+## 编码
+可以使用
+```
+mysql> show variables like 'character%'; --查看编码方式
++--------------------------+----------------------------+
+| Variable_name            | Value                      |
++--------------------------+----------------------------+
+| character_set_client     | gbk                        |
+| character_set_connection | utf8                       |
+| character_set_database   | latin1                     |
+| character_set_filesystem | binary                     |
+| character_set_results    | utf8                       |
+| character_set_server     | utf8                       |
+| character_set_system     | utf8                       |
+| character_sets_dir       | /usr/share/mysql/charsets/ |
++--------------------------+----------------------------+
+8 rows in set (0.01 sec)
+
+mysql> set character_set_client=utf8;	--更改编码
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> show variables like 'character_set_client';	--查看client编码
++----------------------+-------+
+| Variable_name        | Value |
++----------------------+-------+
+| character_set_client | utf8  |
++----------------------+-------+
+1 row in set (0.01 sec)
+
+mysql>
+
+
+```
+
 `欢迎讨论，未完待续`

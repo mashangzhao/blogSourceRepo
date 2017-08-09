@@ -19,10 +19,19 @@ tags: [gitlab]
    * 可以重复上面步骤，给github账户也生成钥匙对，注意文件名不要与上面的冲突，`复制ssh`到你的gitlab或者github账户
    此处是`公钥`，一定注意
    * 添加私钥，不过`不太明白`这里
+   大概是一个全局变量，省去了每次输入密钥。
    ```
     ssh-add ~/.ssh/id_rsa_gitlab
     ssh-add ~/.ssh/id_rsa
    ```
+  * 有时会出新问题：
+  ```
+  Could not open a connection to your authentication agent.
+  ```
+  此问题是需要ssh-agent 启动bash。如下操作即可。。
+  ```
+  ssh-agent bash --login -i
+  ```
    * 新建一个config文件
 ```
 touch config
@@ -126,8 +135,10 @@ git push origin :msz
 **参考** `还有一些没有列出`
 
 > 待续…… ——by arther
-> 
-> 
-克隆某个分支
+
+* 克隆某个分支
 git clone -b <branch name > <repo name>
- git clone -b develop git@gitlab.com:mashangzhao/wow.git
+git clone -b develop git@gitlab.com:mashangzhao/wow.git
+
+* 更新说明 2017#08#09
+ 加入了ssh-agent不能认证问题解决方案。
