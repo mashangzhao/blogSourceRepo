@@ -3,7 +3,7 @@ title: ssh服务的一些经历
 
 date: 2017-08-12 11:37:51
 
-tags: [ssh] [ubuntu] [sudoers]
+tags: [ssh],[ubuntu],[sudoers]
 
 ---
 
