@@ -7,9 +7,6 @@ tags: [ssh,ubuntu,sudoers]
 
 ---
 
-[TOC]
-
-
 
 ## 先了解下SSH？
 
@@ -19,6 +16,8 @@ tags: [ssh,ubuntu,sudoers]
 
 ## 没有SSH远程登录配置？
 今天看了aliyun的一篇文档，从无到有完成了一个
+<!-- more -->
+
 * 禁止root登陆
 * 使用口令登陆
 * 禁止密码登录
