@@ -119,6 +119,7 @@ PasswordAuthentication no			#yes -> no最终改为no即可
 修改sshd_config文件，
 Port xxxx			#xxxx为其他端口
 
+#2 重启服务尝试
 ```
 
 - 小说明
