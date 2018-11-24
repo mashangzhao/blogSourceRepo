@@ -58,7 +58,7 @@ root@iZ28si2aplqZ:/home# /etc/init.d/ssh restart
 
 # 尝试root登陆，发现无法登陆，这时候完成了第一步：禁止root登陆。
 ```
-![禁止root登陆](http://on2k2dqee.bkt.clouddn.com/permitrootlogin.png)
+![禁止root登陆](https://asjdfkl1239807yuiao-1253113844.cos.ap-beijing.myqcloud.com/ssh-blog/permitrootlogin.png)
 
 - 使用口令登陆
 当然需要生成一对口令，公钥和私钥，然后公钥(.pub)需要放在远程一个合适的位置。
@@ -93,10 +93,10 @@ mashangzhao@iZ28si2aplqZ:/home/mashangzhao# chmod 400 .ssh/authorized_keys	#修�
 #5 测试是否可以使用口令登陆？
 如果可以，可以进行下一步，禁止密码登陆。
 ```
-![生成一个密钥](http://on2k2dqee.bkt.clouddn.com/ssh-key-rsa.png)
-![sshd_config](http://on2k2dqee.bkt.clouddn.com/sshd_config_1.png)
-![不允许空的密码](http://on2k2dqee.bkt.clouddn.com/permitemptypasswords.png)
-![密码认证先开启](http://on2k2dqee.bkt.clouddn.com/passwordauthentication.png)
+![生成一个密钥](https://asjdfkl1239807yuiao-1253113844.cos.ap-beijing.myqcloud.com/ssh-blog/ssh-key-rsa.png)
+![sshd_config](https://asjdfkl1239807yuiao-1253113844.cos.ap-beijing.myqcloud.com/ssh-blog/sshd_config_1.png)
+![不允许空的密码](https://asjdfkl1239807yuiao-1253113844.cos.ap-beijing.myqcloud.com/ssh-blog/permitemptypasswords.png)
+![密码认证先开启](https://asjdfkl1239807yuiao-1253113844.cos.ap-beijing.myqcloud.com/ssh-blog/passwordauthentication.png)
 
 - 禁止密码登录
 
