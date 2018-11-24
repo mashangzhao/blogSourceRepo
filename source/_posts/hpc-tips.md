@@ -49,14 +49,10 @@ tags: [script]
 
 		for i in {1..10}; do qsub script.$i.pbs ;done
 
-*图片仅供参考，具体以实物为准*
+*图片参考`失败`，具体以实物为准*
 
 
-![图片一](http://on2k2dqee.bkt.clouddn.com/hpc_0.PNG)
+**参考文档1**  [Tutorial - Submitting a job using qsub](https://wikis.nyu.edu/display/NYUHPC/Tutorial+-+Submitting+a+job+using+qsub)
 
-![图片二](http://on2k2dqee.bkt.clouddn.com/hpc_1.PNG)
-
-**参考文档1** [Tutorial - Submitting a job using qsub](https://wikis.nyu.edu/display/NYUHPC/Tutorial+-+Submitting+a+job+using+qsub)
-
-**待更** 
+**待更**
 
