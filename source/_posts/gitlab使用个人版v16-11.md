@@ -120,7 +120,7 @@ touch config
 
 ## 使用
 
-* 先clone到本地，在初始化
+* 先clone到本地，再初始化
 
 ```
 
@@ -157,6 +157,31 @@ git commit -m "add README"
 git push -u origin master
 
 ```
+
+
+_ _ _
+在使用的过程中又出现了新问题，或者类似的问题，就是有小号的github在同一台电脑，怎么处理？
+解决方案类似，用户目录下的.ssh目录内的 `config` 文件，发挥作用。
+```
+#github
+Host github.com
+	HostName github.com
+	PreferredAuthentications publickey
+	IdentityFile ~/.ssh/id_rsa_github
+#github_scottboy,Host后面的名字随便，HostName后面的不可以
+Host othergithub
+	HostName github.com
+	PreferredAuthentications publickey
+	IdentityFile ~/.ssh/scottboy_github
+```
+然后按照上面的ssh-add ~/.ssh/scottboy_github，
+接下来测试是否设置成功：```ssh -T git@othergithub  #可以这样玩的```
+然后 ```git remote add origin git@othergithub:asdjflajfds/xx-project.git```
+具体结构：```git remote add origin git@config里面规定的Host:你的github账户名/你的项目名.git```
+
+其中遇到了一点小问题：当你添加地址的时候不小心拼错了，可以```git remote rm origin```，然后重新添加。
+_ _ _
+
 
 * 查看本地分支
 
@@ -285,4 +310,7 @@ git clone -b develop git@gitlab.com:mashangzhao/wow.git
 * 更新说明 2017#08#09
 
  加入了ssh-agent不能认证问题解决方案。
+* 2019#03#31
+ github小号引发的问题
+
 
