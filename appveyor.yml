@@ -6,6 +6,7 @@ install:
   - node --version
   - npm --version
   - npm install
+  - npm install hexo-renderer-scss
   - npm install hexo-cli -g
 
 build_script:
