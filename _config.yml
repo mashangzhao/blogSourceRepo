@@ -6,8 +6,8 @@
 title: Blog
 subtitle: Fun
 description:
-author: Shangzhao Ma
-language:
+author: Shangzhao Ma|马尚朝
+language: zh-cn
 timezone:
 
 # URL
@@ -44,7 +44,7 @@ highlight:
   tab_replace:
 
 # Category & Tag
-default_category: uncategorized
+default_category: categorized
 category_map:
 tag_map:
 
@@ -63,7 +63,8 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: spfk
+#theme: spfk
+theme: even
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
