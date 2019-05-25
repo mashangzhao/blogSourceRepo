@@ -8,9 +8,8 @@ tags: [gitlab]
 
 ---
 
-
-
 ## 安装gitbash
+
 
 **附上地址链接**：[git](https://git-scm.com/downloads)
 
@@ -19,10 +18,10 @@ tags: [gitlab]
 ## 配置gitlab和github
 
 
-
 **同时**使用github和gitlab，引发了此问题，所以需要再次清理旧的配置。从新开始：
 
-* 打开git bash，在你的用户目录，生成ssh钥匙对，并且`指定`文件名为id_rsa_gitlab，`合适`的时候回车
+
+* 打开git bash，在你的用户目录，生成ssh钥匙对，并且`指定`文件名为id_rsa_gitlab
 
    ```
    cd ~/
@@ -31,10 +30,10 @@ tags: [gitlab]
 
 * 可以重复上面步骤，给github账户也生成钥匙对，注意文件名不要与上面的冲突，`复制ssh`到你的gitlab或者github账户
 
-   此处是`公钥`，一定注意
+    > 此处是`公钥`，一定注意
 
 
-  * 添加私钥，不过`不太明白`这里
+* 添加私钥，不过`不太明白`这里
 
    大概是一个全局变量，省去了每次输入密钥。
 
@@ -43,18 +42,16 @@ tags: [gitlab]
     ssh-add ~/.ssh/id_rsa
    ```
 
-  * 有时会出新问题：
+* 有时会出新问题：
 
   ```
   Could not open a connection to your authentication agent.
-
   ```
 
   此问题是需要ssh-agent 启动bash。如下操作即可。。
 
   ```
   ssh-agent bash --login -i
-
   ```
 
 
@@ -64,7 +61,7 @@ tags: [gitlab]
     touch config
     ```
 
-   * 内容如下
+* 内容如下
 
    ```
     #gitlab
@@ -109,6 +106,7 @@ tags: [gitlab]
     ```
 
 * 新建个文件，写点内容试试
+
     ```
     touch README.md
     vim README.md
@@ -130,6 +128,7 @@ tags: [gitlab]
 - - - -
 在使用的过程中又出现了新问题，或者类似的问题，就是有小号的github在同一台电脑，怎么处理？
 解决方案类似，用户目录下的.ssh目录内的 `config` 文件，发挥作用。
+
 ```
 #github
 Host github.com
@@ -145,22 +144,33 @@ Host othergithub
 
 然后按照上面的ssh-add ~/.ssh/scottboy_github，
 接下来测试是否设置成功： 
-    ``` ssh -T git@othergithub  #可以这样玩的 ```
+
+```
+ssh -T git@othergithub  #可以这样玩的 
+```
 
 然后
-    ```
-        git remote add origin git@othergithub:asdjflajfds/xx-project.git 
-    ```
+
+```
+git remote add origin git@othergithub:asdjflajfds/xx-project.git 
+```
 
 具体结构：
-    ```
-    git remote add origin git@config里面规定的Host:你的github账户名/你的项目名.git
-    ```
+
+```
+git remote add origin git@config里面规定的Host:你的github账户名/你的项目名.git
+```
 
 其中遇到了一点小问题：当你添加地址的时候不小心拼错了，可以
-```git remote rm origin```，然后重新添加。
 
-- - - -
+```
+git remote rm origin
+```
+
+然后重新添加。
+
+--------------
+## 其他方法
 
 
 * 查看本地分支
@@ -218,7 +228,7 @@ Host othergithub
     git branch -r -d origin/msz
     ```
 
-    >    Deleted remote-tracking branch origin/msz (was 83e06c5).
+    > Deleted remote-tracking branch origin/msz (was 83e06c5).
 
 
 * 非常十分肯定的删除，即用空代替 msz
@@ -243,7 +253,7 @@ Host othergithub
 * 克隆某个分支
 
     ```
-    git clone -b   `<branch name > <repo name>`
+    git clone -b   <branch name > <repo name>
     git clone -b develop git@gitlab.com:mashangzhao/wow.git
     ```
 
@@ -251,5 +261,3 @@ Host othergithub
 * 更新说明 
   * 2017#08#09  加入了ssh-agent不能认证问题解决方案。
   * 2019#03#31  github小号引发的问题
-
-

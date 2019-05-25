@@ -19,6 +19,7 @@ tags: [git]
 当前问题：两个github帐号，如何在同一台电脑上pull、push。
 
 重点是 `~/.ssh/config文件`，部分内容如下
+<!-- more -->
 
 ```
 #github
@@ -84,7 +85,7 @@ git rm --cached theme/even/ #终于成功了，部署后发现有页面了！
 NODE_PATH=你的博客仓库node js module路径
 Path追加 node js安装路径
 ```
-发现了taobao的npm镜像，https://npm.taobao.org/，大致参照就可以。
+发现了taobao的npm镜像，https://npm.taobao.org/ ，大致参照就可以。
 
 
 参考文献：
