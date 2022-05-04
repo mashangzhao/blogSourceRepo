@@ -1,6 +1,6 @@
 ---
 title: re
-tags: [python,re,正则表达式]
+tags: [python,re]
 date: 2022-05-04 23:52:55
 ---
 
@@ -56,3 +56,4 @@ big_phone= re.compile('\d{3,}(-\d{3,})+') # 删除电话号码，可能会附带
 
 ### 参考资料
 `re.sub()` 替换部分 https://blog.csdn.net/blmoistawinde/article/details/81839647
+
