@@ -143,13 +143,13 @@ Host othergithub
 ```
 
 然后按照上面的ssh-add ~/.ssh/scottboy_github，
-接下来测试是否设置成功： 
+接下来测试是否设置成功：
 
 ```
 ssh -T git@othergithub  #可以这样玩的 
 ```
 
-然后
+然后 
 
 ```
 git remote add origin git@othergithub:asdjflajfds/xx-project.git 
@@ -175,48 +175,48 @@ git remote rm origin
 
 * 查看本地分支
 
-    ```
-    git branch
-    ```
+```
+git branch
+```
 
 
 * 查看远端所有分支
 
-    ```
-    git branch -r
-    ```
+```
+git branch -r
+```
 
 * 创建新分支
-    ```
-    git checkout -b msz
-    ```
-    > Switched to a new branch 'msz'
+```
+git checkout -b msz
+```
+> Switched to a new branch 'msz'
 
 
 
 * 切换分支到 master
 
-    ```
-    git checkout master
-    ```
+```
+git checkout master
+```
 
 * push到远端的分支 msz
 
-    ```
-    git push -u origin msz
-    ```
+```
+git push -u origin msz
+```
 
 * 查看所有分支，包括本地和远端
 
-    ```
-    git branch -a
-    ```
+```
+git branch -a
+```
 
 * 删除本地分支 msz
 
-    ```
-    git branch -d msz
-    ```
+```
+git branch -d msz
+```
 
     > Deleted branch msz (was 83e06c5).
 
