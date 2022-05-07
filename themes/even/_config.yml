@@ -95,7 +95,7 @@ disqus_shortname:
 
 # comment-2022
 cusdis:
-  enable: true
+  host: https://mashangzhao.github.io/
   app_id: f2d4782f-5840-4227-8f7d-c42045369d91
 
 #Changyan
