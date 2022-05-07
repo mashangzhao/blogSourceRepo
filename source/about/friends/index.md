@@ -1,6 +1,7 @@
 ---
 title: friends
 date: 2019-05-19 13:39:00
+comments: true
 ---
 ## 有朋自远方来，不亦乐乎？
 
